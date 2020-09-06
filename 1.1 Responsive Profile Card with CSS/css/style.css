@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: rgb(230, 230, 230);
+}
+
+.card-container{
+    width:400px;
+    background-color: white;
+    margin: 75px auto;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 3px 30px;
+    font-size: 16px;
+    font-family: "Raleway";
+
+}
+
+.card-container .card-header{
+    position: relative;
+    height: 48px;
+}
+
+.card-container .card-header .profile-img{
+    width:120px;
+    height: 120px;
+    border-radius: 1000px;
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,-50%);
+    border: 6px solid white;
+    background-color: #BDBDBD;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+}
+
+.card-container .card-body{
+    padding: 10px 40px;
+}
+
+.card-container .card-body .full-name{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 15px 0px 0px;
+}
+
+.card-container .card-body .username{
+    color: rgb(119, 119, 119);
+    font-size: 13px;
+    margin:5px 0px 0px;
+}
+
+.card-container .card-body .city{
+    font-weight: 500;
+    margin:10px 0px 0px;
+}
+
+.card-container .card-body .desc{
+    line-height: 24px;
+}
+
+.card-container .card-body ul{
+    list-style: none;
+    margin:1em 0 1em 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.card-container .card-body ul li{
+    font-size: 18px;
+}
+.card-container .card-footer{
+    border-top: 1px solid rgb(230, 230, 230);
+    display: table;
+    width: 100%;
+}
+
+.card-container .card-footer .col{
+    padding: 5px 10px;
+    display: table-cell;
+    font-size: 15px;
+}
+
+.card-container .card-footer .vr{
+    border-right: 1px solid rgb(230, 230, 230);
+}
+
+.facebook-icon{
+    color:blue;
+}
+
+.twitter-icon{
+    color:aqua;
+}
+
+.youtube-icon{
+    color:red;
+}
+
+.linkedin-icon{
+    color:blue;
+}
+
+.google-icon{
+    color:red;
+}
+
+.card-container  .card-footer .count{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 575px) {
+    .card-container {
+        width: 96%;
+    }
+
+    .card-container  .card-body {
+        padding: 10px 20px;
+    }
+
+    .card-container  .card-footer .col {
+        padding: 0 10px;
+    }
+
+    .card-container  .card-footer .count {
+        display: block;
+        margin-bottom: 5px;
+    }
+}
